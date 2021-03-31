@@ -2,11 +2,6 @@ import React from "react";
 
 const Friends = (friend) => {
   const cart = friend.user;
-  let salary = 0;
-  for (let i = 0; i < cart.length; i++) {
-    const friend = cart[i];
-    salary = salary + friend.annual_salary;
-  }
   return (
     <div>
       <div className="card">
@@ -15,7 +10,6 @@ const Friends = (friend) => {
           <p className="text-muted">Salary: {cart.annual_salary}</p>
         </div>
       </div>
-      <p className="text-muted">{salary}</p>
     </div>
   );
 };
